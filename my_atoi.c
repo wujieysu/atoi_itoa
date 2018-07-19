@@ -31,18 +31,18 @@ int my_atoi(char *buf, int len, int *a)
     *a=sum;
     return 0;
 }
-//
-//int main()
-//{
-//    char *buf=" + 12234";
-//    int len = strlen(buf);
-//    int a=0;
-//    int ret=my_atoi(buf,len,&a);
-//    if (ret != 0)
-//    {
-//        printf("error");
-//        return -1;
-//    }
-//    printf("%d\n",a);
-//}
-//
+
+int main()
+{
+    char *buf=" + 12234";
+    int len = strlen(buf);
+    int a=0;
+    int ret=my_atoi(buf,len,&a);
+    if (ret != 0)
+    {
+        printf("error");
+        return -1;
+    }
+    printf("%d\n",a);
+}
+
